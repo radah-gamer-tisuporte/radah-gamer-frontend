@@ -1,0 +1,82 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #05040c;
+  padding: 0 48px;
+  height: 72px;
+}
+
+/* ─── Brand ─── */
+.navbar__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.navbar__logo {
+  font-family: var(--font-cinzel);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #c9a84c;
+  line-height: 1;
+}
+
+.navbar__tagline {
+  font-family: var(--font-cinzel);
+  font-size: 0.55rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: #6b6455;
+  text-transform: uppercase;
+}
+
+/* ─── Nav Links ─── */
+.navbar__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.navbar__links a {
+  font-family: var(--font-cinzel);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #7a7062;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.navbar__links a:hover {
+  color: #c9a84c;
+}
+
+/* ─── CTA Button ─── */
+.navbar__cta {
+  font-family: var(--font-cinzel);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #05040c;
+  background-color: #c9a84c;
+  border: none;
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.navbar__cta:hover {
+  background-color: #e0bf6a;
+}

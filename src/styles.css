@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700;900&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/chapeau');
+
+:root {
+	--font-cinzel: 'Cinzel', serif;
+	--font-cinzel-decorative: 'Cinzel Decorative', serif;
+	--font-chapeu: 'Chapeau', serif;
+	--font-raleway: 'Raleway', sans-serif;
+}
+
+.font-cinzel {
+	font-family: var(--font-cinzel);
+}
+
+.font-cinzel-decorative {
+	font-family: var(--font-cinzel-decorative);
+}
+
+.font-chapeu {
+	font-family: var(--font-chapeu);
+}
+
+.font-raleway {
+	font-family: var(--font-raleway);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
