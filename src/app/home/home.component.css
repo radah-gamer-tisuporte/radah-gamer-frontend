@@ -39,7 +39,7 @@
 
 .eyebrow {
   display: block;
-  font-family: var(--font-cinzel);
+  font-family: var(--font-raleway);
   font-size: 0.6rem;
   font-weight: 600;
   letter-spacing: 0.38em;
@@ -55,7 +55,7 @@
   border: none;
   background: linear-gradient(100deg, #c9a84c 0%, #e8c96a 50%, #c0983c 100%);
   color: #08070f;
-  font-family: var(--font-cinzel);
+  font-family: var(--font-raleway);
   font-size: clamp(0.65rem, 0.85vw, 0.78rem);
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -76,7 +76,7 @@
   border: 1px solid rgba(201, 168, 76, 0.45);
   background: transparent;
   color: rgba(201, 168, 76, 0.85);
-  font-family: var(--font-cinzel);
+  font-family: var(--font-raleway);
   font-size: clamp(0.65rem, 0.85vw, 0.78rem);
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -111,7 +111,7 @@
   align-items: center;
   gap: 20px;
   background-color: rgba(5, 4, 12, 0.96);
-  border-bottom: 1px solid rgba(184, 148, 63, 0.18);
+  border-bottom: 1px solid rgba(184, 148, 63, 0.3);
   backdrop-filter: blur(12px);
 }
 .home_navbar-brand {
@@ -129,11 +129,11 @@
   line-height: 1;
 }
 .home_brand-subtitle {
-  font-family: var(--font-cinzel);
+  font-family: var(--font-raleway);
   font-size: 0.55rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: rgba(140, 130, 110, 0.6);
+  color: rgba(140, 130, 110, 0.9);
   white-space: nowrap;
 }
 .home_navbar-menu {
@@ -145,7 +145,7 @@
 }
 .home_navbar-link {
   text-decoration: none;
-  font-family: var(--font-cinzel);
+  font-family: var(--font-raleway);
   font-size: clamp(0.6rem, 0.8vw, 0.75rem);
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -161,7 +161,7 @@
   border: none;
   background: linear-gradient(100deg, #c9a84c 0%, #e8c96a 50%, #c0983c 100%);
   color: #08070f;
-  font-family: var(--font-cinzel);
+  font-family: var(--font-raleway);
   font-size: clamp(0.65rem, 0.85vw, 0.8rem);
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -201,18 +201,18 @@
     to bottom,
     transparent 0%,
     rgba(201, 168, 76, 0.0) 10%,
-    rgba(201, 168, 76, 0.35) 35%,
-    rgba(230, 200, 100, 0.55) 50%,
-    rgba(201, 168, 76, 0.35) 65%,
+    rgba(201, 168, 76, 0.55) 35%,
+    rgba(230, 200, 100, 0.82) 50%,
+    rgba(201, 168, 76, 0.55) 65%,
     rgba(201, 168, 76, 0.0) 90%,
     transparent 100%
   );
-  filter: blur(6px);
+  filter: blur(10px);
   animation: beam-flicker 5s ease-in-out infinite;
 }
 .hero_beam--1 { left: 52%; transform: rotate(18deg) translateX(-50%); width: 3px; animation-delay: 0s; }
-.hero_beam--2 { left: 58%; transform: rotate(18deg) translateX(-50%); width: 2px; opacity: 0.6; animation-delay: 0.8s; }
-.hero_beam--3 { left: 45%; transform: rotate(18deg) translateX(-50%); width: 1px; opacity: 0.35; animation-delay: 1.6s; }
+.hero_beam--2 { left: 58%; transform: rotate(18deg) translateX(-50%); width: 2px; opacity: 0.8; animation-delay: 0.8s; }
+.hero_beam--3 { left: 45%; transform: rotate(18deg) translateX(-50%); width: 1px; opacity: 0.6; animation-delay: 1.6s; }
 
 @keyframes beam-flicker {
   0%, 100% { opacity: 1; }
@@ -229,7 +229,7 @@
   align-items: center;
 }
 .hero_edition {
-  font-family: var(--font-cinzel);
+  font-family: var(--font-raleway);
   font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.3em;
@@ -300,7 +300,7 @@
   margin: 0 0 14px;
 }
 .hero_description {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: clamp(0.8rem, 1.2vw, 0.95rem);
   font-weight: 400;
   color: rgba(160, 150, 130, 0.75);
@@ -396,10 +396,14 @@
   height: 55%;
   pointer-events: none;
 }
-.hero_house-glow--adon  { background: linear-gradient(to top, rgba(180, 30, 30, 0.65), transparent); }
-.hero_house-glow--berak { background: linear-gradient(to top, rgba(110, 30, 190, 0.65), transparent); }
-.hero_house-glow--ophir { background: linear-gradient(to top, rgba(20, 140, 140, 0.65), transparent); }
-.hero_house-glow--magen { background: linear-gradient(to top, rgba(30, 130, 55, 0.65), transparent); }
+.hero_house-glow--adon  { background: linear-gradient(to top, rgba(180, 30, 30, 0.85), transparent); }
+.hero_house-glow--berak { background: linear-gradient(to top, rgba(110, 30, 190, 0.85), transparent); }
+.hero_house-glow--ophir { background: linear-gradient(to top, rgba(20, 140, 140, 0.85), transparent); }
+.hero_house-glow--magen { background: linear-gradient(to top, rgba(30, 130, 55, 0.85), transparent); }
+
+.hero_house-glow {
+  filter: blur(15px);
+}
 
 .hero_house-info {
   display: flex;
@@ -449,9 +453,10 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
+  filter: blur(8px);
   background:
-    linear-gradient(135deg, transparent 62%, rgba(201,168,76,0.035) 62%, rgba(201,168,76,0.035) 63.5%, transparent 63.5%),
-    linear-gradient(135deg, transparent 72%, rgba(201,168,76,0.025) 72%, rgba(201,168,76,0.025) 73%, transparent 73%);
+    linear-gradient(135deg, transparent 62%, rgba(201,168,76,0.12) 62%, rgba(201,168,76,0.12) 63.5%, transparent 63.5%),
+    linear-gradient(135deg, transparent 72%, rgba(201,168,76,0.08) 72%, rgba(201,168,76,0.08) 73%, transparent 73%);
 }
 .about_container {
   max-width: 1200px;
@@ -477,7 +482,7 @@
   background-clip: text;
 }
 .about_body {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: clamp(0.85rem, 1.1vw, 1rem);
   color: rgba(160, 150, 130, 0.75);
   line-height: 1.85;
@@ -498,7 +503,7 @@
   font-family: var(--font-cinzel-decorative);
   font-size: 2.4rem;
   font-weight: 900;
-  color: rgba(184, 148, 63, 0.18);
+  color: rgba(184, 148, 63, 0.80);
   line-height: 1;
   min-width: 56px;
   letter-spacing: -0.02em;
@@ -513,7 +518,7 @@
   text-transform: uppercase;
 }
 .about_item-text {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: 0.88rem;
   color: rgba(150, 140, 120, 0.7);
   line-height: 1.7;
@@ -543,16 +548,16 @@
     to bottom,
     transparent 0%,
     rgba(201, 168, 76, 0.0) 15%,
-    rgba(201, 168, 76, 0.22) 40%,
-    rgba(230, 200, 100, 0.32) 50%,
-    rgba(201, 168, 76, 0.22) 60%,
+    rgba(201, 168, 76, 0.45) 40%,
+    rgba(230, 200, 100, 0.65) 50%,
+    rgba(201, 168, 76, 0.45) 60%,
     transparent 100%
   );
-  filter: blur(4px);
+  filter: blur(8px);
 }
-.how_beam--1 { left: 20%; transform: rotate(20deg); opacity: 0.9; }
-.how_beam--2 { left: 55%; transform: rotate(20deg); width: 2px; opacity: 0.7; }
-.how_beam--3 { left: 80%; transform: rotate(20deg); opacity: 0.5; }
+.how_beam--1 { left: 20%; transform: rotate(20deg); opacity: 1; }
+.how_beam--2 { left: 55%; transform: rotate(20deg); width: 2px; opacity: 0.85; }
+.how_beam--3 { left: 80%; transform: rotate(20deg); opacity: 0.7; }
 
 .how_header {
   text-align: center;
@@ -588,7 +593,7 @@
 }
 .how_card {
   background: linear-gradient(160deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
-  border: 1px solid rgba(184, 148, 63, 0.15);
+  border: 1px solid rgba(184, 148, 63, 0.3);
   padding: 32px 24px 36px;
   position: relative;
   transition: border-color 0.3s, transform 0.3s;
@@ -601,7 +606,7 @@
   font-family: var(--font-cinzel-decorative);
   font-size: 3rem;
   font-weight: 900;
-  color: rgba(184, 148, 63, 0.12);
+  color: rgba(184, 148, 63, 0.85);
   line-height: 1;
   margin-bottom: 16px;
 }
@@ -633,7 +638,7 @@
   margin: 0 0 12px;
 }
 .how_card-text {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: 0.85rem;
   color: rgba(150, 140, 120, 0.7);
   line-height: 1.7;
@@ -648,7 +653,7 @@
   gap: 8px;
 }
 .how_card-list li {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: 0.85rem;
   color: rgba(150, 140, 120, 0.7);
   padding-left: 20px;
@@ -674,25 +679,23 @@
 }
 .houses_bg-beam {
   position: absolute;
-  top: 0;
-  left: 8%;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(201, 168, 76, 0.18) 30%,
-    rgba(201, 168, 76, 0.28) 50%,
-    rgba(201, 168, 76, 0.18) 70%,
-    transparent 100%
-  );
-  filter: blur(5px);
-  transform: rotate(5deg);
+  inset: -10% -5% auto auto;
+  width: min(65vw, 920px);
+  height: min(65vw, 920px);
   pointer-events: none;
+  opacity: 1;
+  background:
+    linear-gradient(135deg, transparent 42%, rgba(201, 168, 76, 0.38) 42.5%, rgba(201, 168, 76, 0.75) 44%, transparent 44.5%),
+    linear-gradient(135deg, transparent 55%, rgba(201, 168, 76, 0.32) 55.5%, rgba(201, 168, 76, 0.62) 57%, transparent 57.5%),
+    linear-gradient(135deg, transparent 68%, rgba(201, 168, 76, 0.25) 68.5%, rgba(201, 168, 76, 0.55) 70%, transparent 70.5%);
+  filter: blur(12px);
+  transform: rotate(-7deg);
 }
 .houses_header {
   text-align: center;
   margin-bottom: clamp(48px, 7vw, 72px);
+  position: relative;
+  z-index: 1;
 }
 .houses_title {
   font-family: var(--font-cinzel);
@@ -702,9 +705,9 @@
   margin: 0 0 12px;
 }
 .houses_subtitle {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: clamp(0.85rem, 1.1vw, 1rem);
-  color: rgba(140, 130, 110, 0.6);
+  color: rgba(230, 220, 200, 0.55);
   margin: 0;
   letter-spacing: 0.05em;
 }
@@ -714,6 +717,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 /* ─── House Card ─── */
@@ -721,16 +726,17 @@
   display: flex;
   flex-direction: column;
   background: #08070f;
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-top-width: 3px;
   overflow: hidden;
-  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
 }
 .house-card:hover { transform: translateY(-6px); }
 
 .house-card_image-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 .house-card_image {
@@ -752,13 +758,17 @@
 }
 
 /* House glow colors */
-.house-card_glow--adon  { background: linear-gradient(to top, rgba(180, 30, 30, 0.6), transparent); }
-.house-card_glow--berak { background: linear-gradient(to top, rgba(100, 30, 180, 0.6), transparent); }
-.house-card_glow--ophir { background: linear-gradient(to top, rgba(20, 140, 140, 0.6), transparent); }
-.house-card_glow--magen { background: linear-gradient(to top, rgba(30, 120, 50, 0.6), transparent); }
+.house-card_glow--adon  { background: linear-gradient(to top, rgba(180, 30, 30, 0.85), transparent); }
+.house-card_glow--berak { background: linear-gradient(to top, rgba(100, 30, 180, 0.85), transparent); }
+.house-card_glow--ophir { background: linear-gradient(to top, rgba(20, 140, 140, 0.85), transparent); }
+.house-card_glow--magen { background: linear-gradient(to top, rgba(30, 120, 50, 0.85), transparent); }
+
+.house-card_glow {
+  filter: blur(16px);
+}
 
 .house-card_body {
-  padding: 20px 20px 24px;
+  padding: 18px 20px 22px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -776,18 +786,18 @@
 .house-card_badge--magen { background: rgba(30, 120, 50, 0.15); border: 1px solid rgba(40, 150, 60, 0.4); }
 .house-card_badge-label {
   font-family: var(--font-cinzel);
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-weight: 700;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.22em;
   color: rgba(200, 190, 170, 0.8);
 }
 
 .house-card_name {
   font-family: var(--font-cinzel);
-  font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
   font-weight: 700;
   letter-spacing: 0.08em;
-  margin: 0 0 4px;
+  margin: 0 0 6px;
 }
 .house-card_name--adon  { color: #e05555; }
 .house-card_name--berak { color: #a060e0; }
@@ -796,30 +806,40 @@
 
 .house-card_trait {
   font-family: var(--font-cinzel);
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(180, 170, 150, 0.5);
-  margin: 0 0 14px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: rgba(170, 165, 155, 0.72);
+  line-height: 1.35;
+  margin: 0 0 16px;
 }
-.house-card_stars {
+.house-card_meta {
   display: flex;
-  gap: 4px;
-  margin-bottom: 14px;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  color: rgba(184, 148, 63, 0.9);
 }
-.star {
-  font-size: 0.7rem;
-  color: rgba(184, 148, 63, 0.25);
+.house-card_meta-diamond {
+  font-size: 0.55rem;
+  opacity: 0.7;
 }
-.star--filled { color: #c9a84c; }
+.house-card_meta-label {
+  font-family: var(--font-cinzel);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(140, 130, 110, 0.9);
+}
 
 .house-card_desc {
-  font-family: var(--font-chapeu);
-  font-size: 0.82rem;
+  font-family: var(--font-raleway);
+  font-size: 0.8rem;
   color: rgba(150, 140, 120, 0.65);
   line-height: 1.65;
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   flex: 1;
 }
 .house-card_cta {
@@ -847,6 +867,11 @@
 .house-card--ophir:hover { border-color: rgba(20, 160, 160, 0.45); box-shadow: 0 12px 48px rgba(20, 160, 160, 0.15); }
 .house-card--magen:hover { border-color: rgba(40, 150, 60, 0.45); box-shadow: 0 12px 48px rgba(40, 150, 60, 0.15); }
 
+.house-card--adon { border-top-color: rgba(224, 85, 85, 0.75); }
+.house-card--berak { border-top-color: rgba(160, 96, 224, 0.75); }
+.house-card--ophir { border-top-color: rgba(48, 200, 200, 0.75); }
+.house-card--magen { border-top-color: rgba(80, 200, 112, 0.75); }
+
 /* ═══════════════════════════════════════════════════════════
    OBJETIVO DO CAMPEONATO
    ═══════════════════════════════════════════════════════════ */
@@ -860,9 +885,10 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
+  filter: blur(8px);
   background:
-    linear-gradient(135deg, transparent 38%, rgba(201,168,76,0.03) 38%, rgba(201,168,76,0.03) 40%, transparent 40%),
-    linear-gradient(135deg, transparent 55%, rgba(201,168,76,0.025) 55%, rgba(201,168,76,0.025) 57%, transparent 57%);
+    linear-gradient(135deg, transparent 38%, rgba(201,168,76,0.12) 38%, rgba(201,168,76,0.12) 40%, transparent 40%),
+    linear-gradient(135deg, transparent 55%, rgba(201,168,76,0.08) 55%, rgba(201,168,76,0.08) 57%, transparent 57%);
 }
 .championship_container {
   max-width: 1200px;
@@ -881,7 +907,7 @@
   line-height: 1.2;
 }
 .championship_body {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: clamp(0.85rem, 1.1vw, 1rem);
   color: rgba(160, 150, 130, 0.75);
   line-height: 1.85;
@@ -898,14 +924,14 @@
   gap: 20px;
   align-items: flex-start;
   padding-bottom: 32px;
-  border-bottom: 1px solid rgba(184, 148, 63, 0.12);
+  border-bottom: 1px solid rgba(184, 148, 63, 0.3);
 }
 .champ_item:last-child { border-bottom: none; padding-bottom: 0; }
 .champ_item-number {
   font-family: var(--font-cinzel-decorative);
   font-size: 2.4rem;
   font-weight: 900;
-  color: rgba(184, 148, 63, 0.18);
+  color: rgba(184, 148, 63, 0.80);
   line-height: 1;
   min-width: 56px;
 }
@@ -919,7 +945,7 @@
   margin: 0 0 8px;
 }
 .champ_item-text {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: 0.88rem;
   color: rgba(150, 140, 120, 0.7);
   line-height: 1.7;
@@ -951,7 +977,7 @@
   background-clip: text;
 }
 .coins_subtitle {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: clamp(0.85rem, 1.1vw, 1rem);
   color: rgba(150, 140, 120, 0.65);
   max-width: 520px;
@@ -971,7 +997,7 @@
   align-items: center;
   text-align: center;
   padding: 40px 28px;
-  border: 1px solid rgba(184, 148, 63, 0.14);
+  border: 1px solid rgba(184, 148, 63, 0.3);
   background: rgba(255,255,255,0.015);
   transition: border-color 0.3s, transform 0.3s;
 }
@@ -1010,7 +1036,7 @@
   margin: 0 0 12px;
 }
 .coin-item_text {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: 0.85rem;
   color: rgba(150, 140, 120, 0.7);
   line-height: 1.65;
@@ -1057,7 +1083,7 @@
   background-clip: text;
 }
 .pricing_subtitle {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: clamp(0.9rem, 1.2vw, 1.05rem);
   color: rgba(160, 150, 130, 0.65);
   margin: 0 0 36px;
@@ -1129,7 +1155,7 @@
   gap: 12px 32px;
 }
 .pricing_base-list li {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: clamp(0.82rem, 1vw, 0.92rem);
   color: rgba(200, 190, 165, 0.75);
   display: flex;
@@ -1145,7 +1171,7 @@
 
 /* ─── Tagline ─── */
 .pricing_tagline {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: clamp(0.85rem, 1.1vw, 1rem);
   color: rgba(150, 140, 120, 0.55);
   margin: 0 0 clamp(40px, 6vw, 64px);
@@ -1166,7 +1192,7 @@
 }
 .plan-card {
   background: #08070f;
-  border: 1px solid rgba(184, 148, 63, 0.15);
+  border: 1px solid rgba(184, 148, 63, 0.3);
   padding: 36px 28px 32px;
   position: relative;
   transition: border-color 0.3s, transform 0.3s;
@@ -1238,7 +1264,7 @@
   gap: 10px;
 }
 .feature {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: 0.85rem;
   line-height: 1.4;
   padding-left: 22px;
@@ -1255,7 +1281,7 @@
   font-size: 0.72rem;
 }
 .feature--off {
-  color: rgba(120, 110, 95, 0.4);
+  color: rgba(120, 110, 95, 0.7);
 }
 .feature--off::before {
   content: '–';
@@ -1278,7 +1304,7 @@
   transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
 }
 .plan-card_cta:hover {
-  background: rgba(184, 148, 63, 0.1);
+  background: rgba(184, 148, 63, 0.80);
   border-color: rgba(184, 148, 63, 0.7);
   color: #c9a84c;
   transform: translateY(-1px);
@@ -1304,7 +1330,7 @@
   padding: clamp(80px, 12vw, 140px) 24px;
   text-align: center;
   overflow: hidden;
-  border-top: 1px solid rgba(184, 148, 63, 0.12);
+  border-top: 1px solid rgba(184, 148, 63, 0.3);
 }
 .footer-cta_content { position: relative; z-index: 1; }
 .footer-cta_edition {
@@ -1312,7 +1338,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: rgba(140, 130, 110, 0.5);
+  color: rgba(140, 130, 110, 0.9);
   margin: 0 0 40px;
 }
 
@@ -1321,7 +1347,7 @@
    ═══════════════════════════════════════════════════════════ */
 .footer {
   background-color: #05040c;
-  border-top: 1px solid rgba(184, 148, 63, 0.14);
+  border-top: 1px solid rgba(184, 148, 63, 0.3);
   padding: clamp(48px, 7vw, 80px) clamp(20px, 6vw, 80px) 0;
 }
 
@@ -1355,12 +1381,12 @@
   font-size: 0.52rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(140, 130, 110, 0.45);
+  color: rgba(140, 130, 110, 0.9);
 }
 .footer_tagline {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: 0.85rem;
-  color: rgba(140, 130, 110, 0.5);
+  color: rgba(140, 130, 110, 0.9);
   margin: 12px 0 0;
   line-height: 1.6;
   font-style: italic;
@@ -1387,7 +1413,7 @@
   margin-bottom: 4px;
 }
 .footer_nav-link {
-  font-family: var(--font-chapeu);
+  font-family: var(--font-raleway);
   font-size: 0.85rem;
   color: rgba(150, 140, 120, 0.55);
   text-decoration: none;
@@ -1401,7 +1427,7 @@
   max-width: 1200px;
   margin: 0 auto;
   height: 1px;
-  background: rgba(184, 148, 63, 0.14);
+  background: rgba(184, 148, 63, 0.80);
 }
 
 /* ─── Bottom row ─── */
@@ -1434,7 +1460,7 @@
   justify-content: center;
   width: 34px;
   height: 34px;
-  border: 1px solid rgba(184, 148, 63, 0.15);
+  border: 1px solid rgba(184, 148, 63, 0.3);
   transition: color 0.2s, border-color 0.2s, transform 0.2s;
 }
 .footer_social-link:hover {
@@ -1477,6 +1503,16 @@
   .plan-card--pro:hover { transform: translateY(-4px); }
   .about_container { gap: clamp(32px, 5vw, 60px); }
   .championship_container { gap: clamp(32px, 5vw, 60px); }
+
+  /* Footer */
+  .footer_top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer_nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
 }
 
 /* ── 768px: full mobile layout ── */
@@ -1504,15 +1540,27 @@
     padding: 36px 16px 48px;
     align-items: flex-start;
   }
-  .hero_content { width: 100%; }
-  .hero_stat { padding: 12px 16px; }
+  .hero_content { width: 100%; max-width: 100%; }
+  .hero_stats {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+  .hero_stat {
+    flex: 1 1 calc(50% - 1px);
+    padding: 12px 10px;
+    min-width: 0;
+  }
+  .hero_stat-divider { display: none; }
   .hero_stat-label { display: none; }
   .hero_stat-number { font-size: 1.4rem; }
 
   /* Hero houses — 2×2 on mobile */
   .hero_houses {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 360px;
+    max-width: 100%;
     gap: 10px;
     margin-bottom: 32px;
   }
@@ -1521,7 +1569,7 @@
   .hero_house-info { padding: 10px 8px 12px; }
 
   /* Buttons */
-  .hero_actions { flex-direction: column; width: 100%; max-width: 340px; }
+  .hero_actions { flex-direction: column; width: 100%; max-width: 100%; }
   .btn-gold, .btn-outline { width: 100%; justify-content: center; }
 
   /* About / Championship */
@@ -1529,23 +1577,53 @@
   .championship_container { grid-template-columns: 1fr; gap: 40px; }
 
   /* How it works */
-  .how_grid { grid-template-columns: 1fr; gap: 14px; max-width: 480px; margin-inline: auto; }
+  .how_grid { grid-template-columns: 1fr; gap: 14px; width: 100%; max-width: 100%; margin-inline: auto; }
 
   /* Houses detail grid */
-  .houses_grid { grid-template-columns: 1fr; gap: 20px; max-width: 440px; margin-inline: auto; }
+  .houses_grid { grid-template-columns: 1fr; gap: 20px; width: 100%; max-width: 100%; margin-inline: auto; }
 
   /* Coins */
-  .coins_grid { grid-template-columns: 1fr; gap: 16px; max-width: 440px; margin-inline: auto; }
+  .coins_grid { grid-template-columns: 1fr; gap: 16px; width: 100%; max-width: 100%; margin-inline: auto; }
 
   /* Pricing */
-  .pricing_grid { grid-template-columns: 1fr; gap: 20px; max-width: 440px; margin-inline: auto; }
+  .pricing_grid { grid-template-columns: 1fr; gap: 20px; width: 100%; max-width: 100%; margin-inline: auto; }
   .plan-card:last-child { max-width: 100%; grid-column: auto; }
   .plan-card--pro { transform: none; }
   .plan-card--pro:hover { transform: translateY(-4px); }
   .pricing_base-box { padding: 20px 20px 24px; }
   .pricing_base-list { grid-template-columns: 1fr 1fr; gap: 10px 20px; }
-  .pricing_tabs { width: 100%; max-width: 440px; }
+  .pricing_tabs { width: 100%; max-width: 100%; }
   .pricing_tab { flex: 1; padding: 0 16px; font-size: 0.6rem; }
+
+  /* Footer */
+  .footer {
+    padding: 44px 16px 0;
+  }
+  .footer_top {
+    gap: 24px;
+    padding-bottom: 32px;
+  }
+  .footer_brand {
+    letter-spacing: 0.22em;
+    font-size: 1.3rem;
+  }
+  .footer_brand-sub {
+    letter-spacing: 0.2em;
+    font-size: 0.5rem;
+  }
+  .footer_nav {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .footer_nav-group {
+    gap: 10px;
+  }
+  .footer_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 0 24px;
+  }
 }
 
 /* ── 480px: tighten further ── */
@@ -1555,7 +1633,7 @@
 
   .hero_houses { max-width: 100%; }
   .hero_stats { flex-wrap: wrap; }
-  .hero_stat { padding: 10px 14px; }
+  .hero_stat { flex-basis: calc(50% - 1px); padding: 10px 12px; }
 
   .about_item { flex-direction: column; gap: 8px; }
   .about_item-number { font-size: 1.8rem; min-width: auto; }
@@ -1570,5 +1648,19 @@
   .house-card_image-wrap { aspect-ratio: 4 / 3; }
   .pricing_base-list { grid-template-columns: 1fr; }
   .pricing_tab { height: 42px; font-size: 0.58rem; }
-  .footer_nav { grid-template-columns: 1fr; gap: 20px; }
+  .footer {
+    padding-inline: 14px;
+  }
+  .footer_brand {
+    font-size: 1.2rem;
+    letter-spacing: 0.18em;
+  }
+  .footer_brand-sub {
+    letter-spacing: 0.14em;
+  }
+  .footer_nav { grid-template-columns: 1fr; gap: 16px; }
+  .footer_copy {
+    font-size: 0.68rem;
+    line-height: 1.5;
+  }
 }
